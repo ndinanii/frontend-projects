@@ -1,0 +1,48 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #a1a1a1f3;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.card{
+    width: 280px;
+    height: 150px;
+    background: rgb(1, 0, 10);
+    border-radius: 15px;
+    box-shadow: rgb(0,0,0,0.7) 5px 10px 50px ,rgb(0,0,0,0.7) -5px 0px 250px;
+    display: flex;
+    color: white;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+    background: linear-gradient(to right, rgb(11, 15, 24), rgb(28, 50, 75));
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+.time-text{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+.day-text{
+    font-size: 18px;
+    margin-top: 0px;
+    margin-left: 15px;
+}
+.moon {
+    font-size: 20px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover > .moon {
+    font-size: 23px;
+}
+.card:hover{
+    transform: scale(1.05);
+}
